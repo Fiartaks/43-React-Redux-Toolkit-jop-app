@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "extra";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #242424;
+  color: rgba(255, 255, 255, 1);
+  min-height: 100vh;
+  font-family: "poppins";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+
+  a {
+    text-decoration: none;
+    color: rgb(226, 68, 160);
+    font-size: 19px;
+  }
+  .active {
+    text-shadow: 0 0 20px pink;
+  }
+}
+
+//!hata alani
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  p {
+    text-align: center;
+    span {
+      color: crimson;
+      margin-left: 5px;
+    }
+  }
+}
+
+button {
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  margin-top: 30px;
+  max-width: 190px;
+  max-height: 60px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  perspective: 30rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+}
+
+button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    320deg,
+    rgba(0, 140, 255, 0.678),
+    rgba(128, 0, 128, 0.308)
+  );
+  z-index: 1;
+  transition: background 3s;
+}
+
+button:hover::before {
+  animation: rotate 1s;
+  transition: all 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+//liste sayfasi
+
+.list-page {
+  padding: 20px;
+
+}
+
+
+
+.job-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    
+}
+
+
+.card {
+  background: gray;
+  border-radius: 10px;
+  padding: 6px 15px;
+  margin: 30px 20px;
+
+
+
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+  
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-bottom: 20px;
+
+    .letter {
+      background: purple;
+      width: 60px;
+      height: 60px;
+      display: grid;
+      text-transform: uppercase;
+      place-items: center;
+      border-radius: 10px;
+      font-size: 30px;
+      text-shadow: 0 0 20px white;
+    }
+    .info {
+      font-size: 20px;
+    }
+  }
+  
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+
+    .field{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .status{
+        display: flex;
+
+        p{
+          padding: 6px;
+          border-radius: 10px;  
+        }
+    }
+}
+}
+
+
+//Ekleme Sayfasi
+
+.add-page{
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+}
+.add-sec{
+  width: 70vw;
+  max-width: 700px;
+  box-shadow: 0 0 55px 0 rgb(226, 68, 160);
+  padding: 25px;
+
+  form{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+
+    div{
+      display: flex;
+      flex-direction: column;
+    }
+    div input, div select{
+    padding: 10px 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    }
+div:last-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+  }
+
+
+
+}
+
+.filter-sec{
+@extend .add-sec;
+margin: 20px auto 50px;
+
+ div:last-child{
+  align-items: unset;
+ }
+
+}
