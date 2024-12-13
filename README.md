@@ -13,11 +13,11 @@ This job tracking application showcases a fully-functioning CRUD interface with 
 ## 💻 Features
 
 - 🖼️ **Job Listing:** View all jobs in a concise list format.
-- 💰 **Add Jobs:** Easily add new job entries with essential details such as position, company, location, status, and type.
-- 🎨 **Filter Functionality:** Filter jobs based on various criteria like company name using an in-built search feature.
-- - 🖼️ **Loader Animation:** Displays an engaging loading animation while fetching data from the server.
+- ➕ **Add Jobs:** Easily add new job entries with essential details such as position, company, location, status, and type.
+- 🔍 **Filter Functionality:** Filter jobs based on various criteria like company name using an in-built search feature.
+- ⏳ **Loader Animation:** Displays an engaging loading animation while fetching data from the server.
 - 💰 **Delete Jobs:** Remove job entries with a confirmation dialog to prevent accidental deletions..
-- 🎨 **State Management:** Leveraging Redux Toolkit for efficient state management and asynchronous data fetching.
+- ⚙️ **State Management:** Leveraging Redux Toolkit for efficient state management and asynchronous data fetching.
 - 
 
 ## 🛠️ Technologies and Libraries Used in the Project
