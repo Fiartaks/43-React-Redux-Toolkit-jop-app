@@ -3,7 +3,9 @@
 
 ## 📸 Screenshots 📸
 
-![](rotate.gif)
+![a.png](https://github.com/Fiartaks/43-React-Redux-Toolkit-jop-app/blob/main/job/public/a.png)
+![b.png](https://github.com/Fiartaks/43-React-Redux-Toolkit-jop-app/blob/main/job/public/b.png)
+
 
 This project is a job tracking application built with React and Redux Toolkit. The app allows users to manage job listings, add new jobs, and filter through existing job entries seamlessly.
 This job tracking application showcases a fully-functioning CRUD interface with a modern stack involving React, Redux, and styling with SCSS. The project is well-equipped for future enhancements and scalability
